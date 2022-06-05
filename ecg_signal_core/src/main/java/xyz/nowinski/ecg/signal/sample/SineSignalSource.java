@@ -24,7 +24,7 @@ public class SineSignalSource extends AbstractSignalSource {
     }
 
     @Override
-    public Flux<SignalPackage> generateSignal() {
+    public Publisher<SignalPackage> generateSignal() {
         return Flux.generate(
                 () -> 0,
                 (packageNumber, sink) -> {
