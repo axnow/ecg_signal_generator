@@ -6,4 +6,6 @@ import lombok.Value;
 public class SignalPackage {
     long startFrame;
     double[][] frames;
+
+
 }
