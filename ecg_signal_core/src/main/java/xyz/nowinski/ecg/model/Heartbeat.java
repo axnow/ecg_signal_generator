@@ -1,10 +1,11 @@
 package xyz.nowinski.ecg.model;
 
 import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 public class Heartbeat {
+    double timestamp;
     HeartbeatType type;
-    long rTimestamp;
-
+    double rr;
 }

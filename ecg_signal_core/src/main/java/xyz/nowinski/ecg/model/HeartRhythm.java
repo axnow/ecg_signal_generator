@@ -1,6 +1,9 @@
 package xyz.nowinski.ecg.model;
 
-public class HeartRhythm {
-    float pulseRate;//beats per min
+import lombok.Data;
 
+@Data
+public class HeartRhythm {
+    PulseRate pulse;
+    //todo: add rhythm pattern here.
 }

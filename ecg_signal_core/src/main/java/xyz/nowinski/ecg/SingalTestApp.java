@@ -16,7 +16,7 @@ public class SingalTestApp {
         Flux.from(source.generateSignal())
                 .delayElements(Duration.ofSeconds(1))
 //                .log()
-                .subscribe(p -> log.info("Got package for frame {}.", p.getStartFrame()));
+                .subscribe(p -> log.info("Got package for frame {}.", p.startFrame()));
 //                .subscribe(p -> log.info("Got package for frame {}.", p.getStartFrame()),
 //                        e->log.warn("Got an error: {}", e),
 //                        ()->log.info("Stream completed"),
